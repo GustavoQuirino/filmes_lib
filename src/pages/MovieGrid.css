@@ -28,3 +28,30 @@
     padding: 1rem;
     border-radius: 6px;
 }
+.movies-container div img{
+    max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div p,
+.movies-container div h2{
+    margin-bottom: 1rem;
+}
+
+.movies-container div svg{
+    color: #f7d354;
+}
+.movies-container div a{
+    background-color: #f7d354;
+    border: 2px solid #f7d354;
+    border-radius: 4px;
+    color: #000;
+    padding: 1rem .5rem;
+    text-align: center;
+    font-weight: bold;
+    transition: .5s;
+}
+.movies-container div a:hover{
+    background-color: transparent;
+    color: #f7d354;
+}

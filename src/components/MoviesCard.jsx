@@ -1,9 +1,10 @@
 import {FaStar} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 
 const imgUrl = 'https://image.tmdb.org/t/p/w500/'
 
-const MoviesCard = ({movie}) => {
+const MoviesCard = ({movie, showLink = true}) => {
 
     return (
         <div className="movie-card">
@@ -12,6 +13,7 @@ const MoviesCard = ({movie}) => {
             <p>
                 <FaStar /> {movie.vote_average}
             </p>
+            {showLink && <Link to={`/movie/${movie.id}`}>Detalhes</Link>}
         </div>
     )
 }
