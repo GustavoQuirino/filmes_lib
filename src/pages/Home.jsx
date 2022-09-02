@@ -20,7 +20,6 @@ const Home = () => {
     useEffect(()=>{
 
         getTopRatedMovies();
-        console.log(topMovies)
         
     },[])
 

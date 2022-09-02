@@ -38,7 +38,7 @@ const Search = ()=>{
         <div className="container">
                 <h2 className="title">Resultados para: {query}</h2>
                 <div className="movies-container">
-                    {searchMovies.length === 0 && <p>Carregando pesquisa</p>}
+                    {searchMovies.length === 0 && <p>Carregando pesquisa...</p>}
                     {searchMovies.length > 0 && searchMovies.map((movie)=><MoviesCard key={movie.id} movie={movie}/>)}
                 </div>
             </div>
