@@ -26,15 +26,38 @@ const Movie = ()=>{
     },[ ])
 
     return (
-        <div className="detalhes">
-            {movie && <MoviesCard movie={movie}/>}
-            {movie && 
-            <div>
-                <h2>{movie.title}</h2>
-                <h2>Ano de Lancamento : {movie.release_date}</h2>
-                <p>Sinopse: {movie.overview}</p> 
-            </div>
-            }
+        <div className="movie-page">
+            {movie && (
+                <>
+                    <MoviesCard movie={movie}/>
+                    <p className="tagline">{movie.tagline}</p>
+                    <div className="info">
+                        <h3>
+                            <BsWallet2/>Orcamento :
+                        </h3>
+                        <p>USD ${movie.budget}</p>
+                    </div>
+                    <div className="info">
+                        <h3>
+                            <BsGraphUp/>Receita :
+                        </h3>
+                        <p>USD ${movie.revenue}</p>
+                    </div>
+                    <div className="info">
+                        <h3>
+                            <BsHourglassSplit/>Duracao :
+                        </h3>
+                        <p>{movie.runtime} minutos</p>
+                    </div>
+                    <div className="info">
+                        <h3>
+                            <BsFillFileEarmarkTextFill/>Descricao :
+                        </h3>
+                        <p>{movie.overview}</p>
+                    </div>
+                </>
+            )}
+            
         </div>
     )
 }
