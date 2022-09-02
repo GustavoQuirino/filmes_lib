@@ -5,7 +5,7 @@ import MoviesCard from '../components/MoviesCard'
 import './MovieGrid.css'
 
 const key = '?api_key=7bbc44e17661121420501e26335e6341';
-const searchUrl = "http://api.themoviedb.org/3/search/movie/";
+const searchUrl = "https://api.themoviedb.org/3/search/movie/";
 
 
 
