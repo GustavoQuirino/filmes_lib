@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+div{
+    background-color: rgb(30, 29, 29);
+}
+.detalhes{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem;
+    align-items: center;
+}
+.detalhes h2 {
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.detalhes p {
+    margin: auto;
+}
